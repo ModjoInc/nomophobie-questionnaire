@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:300,400,700|Roboto:300,400");
+[type='range'] {
+  -webkit-appearance: none;
+  margin: 7.5px 0;
+  width: 100%; }
+  [type='range']:focus {
+    outline: 0; }
+    [type='range']:focus::-webkit-slider-runnable-track {
+      background: #fbfbfc; }
+    [type='range']:focus::-ms-fill-lower {
+      background: #eceff1; }
+    [type='range']:focus::-ms-fill-upper {
+      background: #fbfbfc; }
+  [type='range']::-webkit-slider-runnable-track {
+    cursor: pointer;
+    height: 8px;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #eceff1;
+    border: 2px solid #cfd8dc;
+    border-radius: 5px; }
+  [type='range']::-webkit-slider-thumb {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 0 0 2px rgba(13, 13, 13, 0.2);
+    background: #0e0065;
+    border: 2px solid #eceff1;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    margin-top: -5.5px; }
+  [type='range']::-moz-range-track {
+    cursor: pointer;
+    height: 8px;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #eceff1;
+    border: 2px solid #cfd8dc;
+    border-radius: 5px; }
+  [type='range']::-moz-range-thumb {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 0 0 2px rgba(13, 13, 13, 0.2);
+    background: #0e0065;
+    border: 2px solid #eceff1;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px; }
+  [type='range']::-ms-track {
+    cursor: pointer;
+    height: 8px;
+    transition: all 0.2s ease;
+    width: 100%;
+    background: transparent;
+    border-color: transparent;
+    border-width: 7.5px 0;
+    color: transparent; }
+  [type='range']::-ms-fill-lower {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #dde3e6;
+    border: 2px solid #cfd8dc;
+    border-radius: 10px; }
+  [type='range']::-ms-fill-upper {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+    background: #eceff1;
+    border: 2px solid #cfd8dc;
+    border-radius: 10px; }
+  [type='range']::-ms-thumb {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 0 0 2px rgba(13, 13, 13, 0.2);
+    background: #0e0065;
+    border: 2px solid #eceff1;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 0; }
+
+.container {
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header form form form" "header resultat resultat resultat" "footer footer footer footer"; }
+  .container header {
+    grid-area: header;
+    background-image: url("../img/rowan-neal-263978.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+    padding: 10px; }
+  .container footer {
+    grid-area: footer; }
+  .container form {
+    font-family: "PT Sans", sans-serif;
+    grid-area: form;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "questions1 questions2"; }
+    .container form .questions1 {
+      grid-area: questions1;
+      padding: 20px; }
+    .container form .questions2 {
+      grid-area: questions2;
+      padding: 20px; }
+    .container form h2 {
+      font-size: 1.4em;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+    .container form strong {
+      font-style: italic;
+      font-weight: 700; }
+    .container form output {
+      display: block;
+      text-align: center;
+      padding-bottom: 5px;
+      color: #e0dede;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3rem; }
+  .container p {
+    padding: 10px 10px; }
+  .container .resultat {
+    margin-top: 20px;
+    grid-area: resultat;
+    text-align: center; }
+    .container .resultat input {
+      padding: 10px;
+      font-size: 1.2em;
+      font-weight: 300;
+      background-color: rgba(14, 0, 101, 0.6);
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      border: none; }
+
+/*# sourceMappingURL=main.css.map */
